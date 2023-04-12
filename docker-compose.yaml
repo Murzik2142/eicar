@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  web-eicar:
+    image: nginx:alpine
+    volumes:
+      - /opt/docker-compose/eicar:/usr/share/nginx/html:ro
+    ports:
+      - 10080:80
+      - 10443:443
