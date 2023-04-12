@@ -6,4 +6,5 @@ services:
     volumes:
       - /opt/docker-compose/eicar/eicar:/usr/share/nginx/html:ro
     ports:
-      - 10080:80
+      - 10081:80
+      - 10082:80
