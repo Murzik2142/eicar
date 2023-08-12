@@ -3,6 +3,7 @@ version: '3'
 services:
   web-eicar:
     image: nginx:alpine
+    restart: always
     volumes:
       - /opt/docker-compose/eicar-main/eicar:/usr/share/nginx/html:ro
     ports:
