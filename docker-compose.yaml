@@ -4,6 +4,6 @@ services:
   eicar-albus:
     image: nginx:alpine
     volumes:
-      - /opt/git/eicar-albus/eicar:/usr/share/nginx/html:ro
+      - /opt/docker-compose/eicar-albus/eicar:/usr/share/nginx/html:ro
     ports:
       - 10083:80
