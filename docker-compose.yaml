@@ -4,7 +4,7 @@ services:
   web-eicar:
     image: nginx:alpine
     volumes:
-      - /opt/docker-compose/eicar/eicar:/usr/share/nginx/html:ro
+      - /opt/docker-compose/eicar-main/eicar:/usr/share/nginx/html:ro
     ports:
       - 10081:80
       - 10082:80
