@@ -3,8 +3,8 @@ version: '3'
 services:
   eicar-albus:
     image: nginx:alpine
-    restart: always
+    restart: unless-stopped
     volumes:
-      - /opt/docker-compose/eicar-albus/eicar:/usr/share/nginx/html:ro
+      - /opt/docker-compose/eicar-albus:/usr/share/nginx/html:ro
     ports:
       - 10083:80
